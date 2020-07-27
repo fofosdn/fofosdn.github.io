@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Formal Foundations of Software Defined Networks (FoFoSDN)</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap"
+		rel="stylesheet">
+
+	<!-- <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css"> -->
+	<link rel="stylesheet" href="css/animate.css">
+
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+
+	<link rel="stylesheet" href="css/aos.css">
+
+	<link rel="stylesheet" href="css/ionicons.min.css">
+
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/jquery.timepicker.css">
+
+
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/icomoon.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">FoFoSDN</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+			<div class="collapse navbar-collapse" id="ftco-nav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active"><a href="index.html" class="nav-link">Home</a></li>
+					<li class="nav-item active"><a href="#scope" class="nav-link">Scope</a></li>
+					<li class="nav-item active"><a href="#invitedSpeakers" class="nav-link">Speakers</a></li>
+					<li class="nav-item active"><a href="#schedule" class="nav-link">Schedule</a></li>
+					<li class="nav-item active"><a href="#organizers" class="nav-link">Organizers</a></li>
+					<!-- <li class="nav-item active"><a href="#participants" class="nav-link">Participants</a></li> -->
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- END nav -->
+
+	<div class="hero-wrap" style="background-image: url('images/low_poly_banner_design_2203.jpg');" data-stellar-background-ratio="0.5">
+		<div class="overlay"></div>
+		<div class="container">
+			<div class="row no-gutters slider-text align-items-center justify-content-start"
+				data-scrollax-parent="true">
+				<div class="col-lg-8 col-md-8 ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
+					<h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Formal Foundations
+						of Software Defined Networks</h1>
+					<!-- <br><span>Workshop 2020</span></h1> -->
+					<p class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span
+							class="icon-calendar mr-2"></span>10 November 2020 - Madrid, Spain</p>
+					<h2 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"> Held in
+						conjunction with the <a href="https://nfvsdn2020.ieee-nfvsdn.org/">VI IEEE Conference on Network
+							Function Virtualization and Software Defined
+							Networks</a>
+						<div id="timer" class="d-flex" style="margin-top: 30px;">
+							<div class="time" id="days"></div>
+							<div class="time pl-3" id="hours"></div>
+							<div class="time pl-3" id="minutes"></div>
+							<div class="time pl-3" id="seconds"></div>
+						</div>
+				</div>
+				<div class="col-lg-2 col"></div>
+				<!-- <div class="col-lg-4 col-md-6 mt-0 mt-md-5">
+          	<form action="#" class="request-form ftco-animate">
+          		<h2>Join Conference</h2>
+	    				<div class="form-group">
+	    					<input type="text" class="form-control" placeholder="Enter your Name">
+	    				</div>
+	    				<div class="form-group">
+	    					<input type="text" class="form-control" placeholder="Enter your Email">
+	    				</div>
+    					<div class="form-group">
+	    					<input type="text" class="form-control" placeholder="Enter your Phone">
+	    				</div>
+	    				<div class="form-group">
+								<div class="checkbox">
+								   <label><input type="checkbox" value="" class="mr-2"> I have read and accept the terms and conditions</label>
+								</div>
+							</div>
+	            <div class="form-group">
+	              <input type="submit" value="Join now" class="btn btn-primary py-3 px-4">
+	            </div>
+	    			</form>
+          </div> -->
+			</div>
+		</div>
+	</div>
+
+	<section class="ftco-section ftco-no-pt" id="scope">
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="col-md-5 p-md-5 img img-2 d-flex justify-content-center align-items-center"
+					style="background-image: url(images/moti.jpg);">
+				</div>
+				<div class="col-md-7 wrap-about py-md-5 ftco-animate">
+					<div class="heading-section mb-5 pt-5 pl-md-5">
+						<div class="pr-md-5 mr-md-5">
+							<h2 class="mb-4">Technical Focus and Motivation</h2>
+						</div>
+
+						<p>There are several contemporary examples of network failures, particularly in the domain of
+							SDNs, that led to substantial loss for businesses. Formal approaches have been proposed to
+							provide a foundational approach to addressing such issues through correct-by-design
+							construction, specification, and verification of SDN programs. Formal methods are promised
+							to address performance, reliability, and security issues of SDNs using the rigour provided
+							by their underlying mathematics. Hence, formal specification and verification of Network
+							Functions Virtualization (NFV) and Software Defined Networks (SDN) have been gaining
+							momentum in recent years.The focus of this workshop is on formal methods aimed to enable a
+							formal specification and verification of SDNs and NFVs. The topics of interest include, but
+							are not restricted to:</p>
+						<ul>
+							<li>foundations (including formal semantics of) programming languages,</li>
+							<li>formal specification languages,</li>
+							<li>formal verification techniques,</li>
+							<li>synthesis and correct-by-construction methods, and</li>
+							<li>testing, debugging, monitoring and other forms of non-exhaustive validation and
+								verification</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section " id="invitedSpeakers">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-1">Motivational Speakers</h2>
+				</div>
+			</div>
+			<div class="row">
+				<!-- <div class="col-md-6 d-flex align-items-stretch">
+					<div class="speaker ftco-animate d-flex align-items-stretch">
+						<div class="img" style="background-image: url(images/staff-3.jpg);">
+							<div class="text text-absolute">
+								<h3>Robert Bonner</h3>
+								<span class="position">Businessmen</span>
+								<ul class="ftco-social mt-3">
+									<li><a href="#"><span class="icon-twitter"></span></a></li>
+									<li><a href="#"><span class="icon-facebook"></span></a></li>
+									<li><a href="#"><span class="icon-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="col-md-6">
+					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+						<div class="img" style="background-image: url(images/jenifer.jpg);"></div>
+						<div class="text pl-4">
+							<h3><a href="https://www.cs.princeton.edu/~jrex/">Prof. Jennifer Rexford</a></h3>
+							<span class="position">Princeton University</span>
+							<!-- <p>Bio: Georgiana Caltais is an independent junior scientist at the University of Konstanz,
+								Chair for Software and Systems Engineering. Her research interests center around the
+								formal modelling, specification and analysis of computer systems, with emphasis on
+								automata, formal languages and system semantics. Currently, she is the principal
+								investigator of a DFG-funded research project targeting the formal specification and
+								verification of SDNs, with emphasis on counterfactual causal reasoning for liability in
+								SDNs.</p>
+							<ul>
+								<li>Tel: +49 7531 88 4762 / +41 78 405 61 94</li>
+								<li>E-mail: ​georgiana.caltais@uni-konstanz.de</li>
+								<li>Address: University of Konstanz, Chair for Software and Systems Engineering, P.O.
+									Box 67, D-78457, Konstanz, Germany</li>
+							</ul> -->
+						</div>
+					</div>
+					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+						<div class="img" style="background-image: url(images/nicolas.jpg);"></div>
+						<div class="text pl-4">
+							<h3><a href="https://www.microsoft.com/en-us/research/people/nbjorner/?from=http://research.microsoft.com/en-us/people/nbjorner/">Nikolaj Bjørner</a></h3>
+							<span class="position">Microsoft Research</span>
+							<!-- <p>Bio: Hossein Hojjat is an assistant professor at the Tehran Institute for Advanced
+								Studies (TeIAS) and the Rochester Institute of Technology (RIT). He has held visiting
+								assistant professorship at Cornell University. He earned a PhD in Computer Science from
+								EPFL. He is on the editorial board of Information Processing Letters and also co-chairs
+								the international conference on Fundamentals of Software Engineering (FSEN). His
+								research interests center on software defined networking, program synthesis and
+								verification.</p>
+							<ul>
+								<li>Tel: +98 2189174077</li>
+								<li>E-mail: ​hojjat@ut.ac.ir</li>
+								<li>Address: Tehran Institute for Advanced Studies (TeIAS), 17 East Daneshvar St., North
+									Shirazi St., Mollasadra Blvd., Tehran, Iran.</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+						<div class="img" style="background-image: url(images/paola.jpg);"></div>
+						<div class="text pl-4">
+							<h3><a href="https://staff.fnwi.uva.nl/p.grosso/">Dr. Paola Grosso</a></h3>
+							<span class="position">University of Amsterdam </span>
+							<!-- <p>Bio: Mohammad Mousavi holds the chair of Data-Driven Software Engineering at the
+								Department of Informatics, University of Leicester. Mohammad's main research area is in
+								model-based testing, particularly applied to software product lines, cyber-physical
+								systems and software defined networks. He is also interested in formal semantics and
+								formal verification (in particular model-checking) as the foundations of conformance
+								testing for such applications.</p>
+							<ul>
+								<li>Tel: +44 7950554321</li>
+								<li>E-mail: ​mm789@le.ac.uk</li>
+								<li>Address: University of Leicester, School of Informatics, University Road, LE1 7RH,
+									Leicester, UK</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="ftco-section" id="schedule">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-3">Schedule (Comming soon)</h2>
+				</div>
+			</div>
+			<!-- <div class="ftco-schedule">
+				<div class="row">
+					<div class="col-md-3 nav-link-wrap text-center text-md-right">
+						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
+							aria-orientation="vertical">
+							<a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill"
+								href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
+								<span>10 November 2020</span></a>
+						</div>
+					</div>
+					<div class="col-md-9 tab-wrap">
+
+						<div class="tab-content" id="v-pills-tabContent">
+
+							<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
+								aria-labelledby="day-1-tab">
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div>
+									<div class="text">
+										<h2><a href="#">Introduction to SDN</a></h2>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p>
+										<span class="time">09:00 am - 4:30 pm</span>
+										<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											Building Los Angeles CA</p>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p>
+										<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span
+												class="position">Founder of Wordpress</span></h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div>
+									<div class="text">
+										<h2><a href="#">Introduction to SDN</a></h2>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p>
+										<span class="time">09:00 am - 4:30 pm</span>
+										<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											Building Los Angeles CA</p>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p>
+										<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span
+												class="position">Founder of Wordpress</span></h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div>
+									<div class="text">
+										<h2><a href="#">Introduction to SDN</a></h2>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p>
+										<span class="time">09:00 am - 4:30 pm</span>
+										<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											Building Los Angeles CA</p>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p>
+										<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span
+												class="position">Founder of Wordpress</span></h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> -->
+		</div>
+	</section>
+
+	<!-- <section class="ftco-section ftco-gallery ftco-no-pt">
+		<div class="container-fluid px-4">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-3">Conference Gallery</h2>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-3 ftco-animate">
+					<a href="images/image_1.jpg" class="gallery image-popup img d-flex align-items-center"
+						style="background-image: url(images/image_1.jpg);">
+						<div class="icon mb-4 d-flex align-items-center justify-content-center">
+							<span class="icon-instagram"></span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<a href="images/image_2.jpg" class="gallery image-popup img d-flex align-items-center"
+						style="background-image: url(images/image_2.jpg);">
+						<div class="icon mb-4 d-flex align-items-center justify-content-center">
+							<span class="icon-instagram"></span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<a href="images/image_3.jpg" class="gallery image-popup img d-flex align-items-center"
+						style="background-image: url(images/image_3.jpg);">
+						<div class="icon mb-4 d-flex align-items-center justify-content-center">
+							<span class="icon-instagram"></span>
+						</div>
+					</a>
+				</div>
+				<div class="col-md-3 ftco-animate">
+					<a href="images/image_4.jpg" class="gallery image-popup img d-flex align-items-center"
+						style="background-image: url(images/image_4.jpg);">
+						<div class="icon mb-4 d-flex align-items-center justify-content-center">
+							<span class="icon-instagram"></span>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</section> -->
+
+
+
+
+	<section class="ftco-section" id="organizers">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-1">Organizers</h2>
+				</div>
+			</div>
+			<div class="row">
+				<!-- <div class="col-md-6 d-flex align-items-stretch">
+					<div class="speaker ftco-animate d-flex align-items-stretch">
+						<div class="img" style="background-image: url(images/georgiana.png);">
+							<div class="text text-absolute">
+								<h3>Robert Bonner</h3>
+								<span class="position">Businessmen</span>
+								<ul class="ftco-social mt-3">
+									<li><a href="#"><span class="icon-twitter"></span></a></li>
+									<li><a href="#"><span class="icon-facebook"></span></a></li>
+									<li><a href="#"><span class="icon-instagram"></span></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="col-md-6">
+					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+						<div class="img" style="background-image: url(images/georgiana.png);"></div>
+						<div class="text pl-4">
+							<h3>Dr. Georgiana Caltais</h3>
+							<span class="position">University of Konstanz</span>
+							<ul>
+								<li>Profile: <a href="https://gcaltais2.wixsite.com/georgiana-caltais"><span
+											class="icon-user"></span></a></li>
+							</ul>
+							<!-- <p>Bio: Georgiana Caltais is an independent junior scientist at the University of Konstanz,
+								Chair for Software and Systems Engineering. Her research interests center around the
+								formal modelling, specification and analysis of computer systems, with emphasis on
+								automata, formal languages and system semantics. Currently, she is the principal
+								investigator of a DFG-funded research project targeting the formal specification and
+								verification of SDNs, with emphasis on counterfactual causal reasoning for liability in
+								SDNs.</p>
+							<ul>
+								<li>Tel: +49 7531 88 4762 / +41 78 405 61 94</li>
+								<li>E-mail: ​georgiana.caltais@uni-konstanz.de</li>
+								<li>Address: University of Konstanz, Chair for Software and Systems Engineering, P.O.
+									Box 67, D-78457, Konstanz, Germany</li>
+							</ul> -->
+						</div>
+					</div>
+					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+						<div class="img" style="background-image: url(images/hossein.jpeg);"></div>
+						<div class="text pl-4">
+							<h3>Dr. Hossein Hojjat</h3>
+							<span class="position">Tehran Institute for Advanced Studies (TeIAS)</span>
+							<ul>
+								<li>Profile: <a href="https://teias.institute/people/faculty/cs/hossein-hojjat/"><span
+											class="icon-user"></span></a></li>
+							</ul>
+							<!-- <p>Bio: Hossein Hojjat is an assistant professor at the Tehran Institute for Advanced
+								Studies (TeIAS) and the Rochester Institute of Technology (RIT). He has held visiting
+								assistant professorship at Cornell University. He earned a PhD in Computer Science from
+								EPFL. He is on the editorial board of Information Processing Letters and also co-chairs
+								the international conference on Fundamentals of Software Engineering (FSEN). His
+								research interests center on software defined networking, program synthesis and
+								verification.</p>
+							<ul>
+								<li>Tel: +98 2189174077</li>
+								<li>E-mail: ​hojjat@ut.ac.ir</li>
+								<li>Address: Tehran Institute for Advanced Studies (TeIAS), 17 East Daneshvar St., North
+									Shirazi St., Mollasadra Blvd., Tehran, Iran.</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
+						<div class="img" style="background-image: url(images/mohammad.jpg);"></div>
+						<div class="text pl-4">
+							<h3>Dr. Mohammad Mousavi</h3>
+							<span class="position">University of Leicester</span>
+							<ul>
+								<li>Profile: <a href="https://www.cs.le.ac.uk/people/mm789/"><span
+											class="icon-user"></span></a></li>
+							</ul>
+							<!-- <p>Bio: Mohammad Mousavi holds the chair of Data-Driven Software Engineering at the
+								Department of Informatics, University of Leicester. Mohammad's main research area is in
+								model-based testing, particularly applied to software product lines, cyber-physical
+								systems and software defined networks. He is also interested in formal semantics and
+								formal verification (in particular model-checking) as the foundations of conformance
+								testing for such applications.</p>
+							<ul>
+								<li>Tel: +44 7950554321</li>
+								<li>E-mail: ​mm789@le.ac.uk</li>
+								<li>Address: University of Leicester, School of Informatics, University Road, LE1 7RH,
+									Leicester, UK</li>
+							</ul> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- <section class="ftco-section testimony-section" id="participants">
+		<div class="container">
+			<div class="row justify-content-center mb-5">
+				<div class="col-md-7 text-center heading-section ftco-animate">
+					<h2 class="mb-3">Participants</h2>
+				</div>
+			</div>
+			<div class="row ftco-animate">
+				<div class="col-md-12">
+					<div class="carousel-testimony owl-carousel ftco-owl">
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+								<div class="text pt-4">
+									<p class="name">Roger Scott</p>
+									<span class="position">Marketing Manager</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+								<div class="text pt-4">
+
+									<p class="name">Roger Scott</p>
+									<span class="position">Interface Designer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+
+								<div class="text pt-4">
+
+									<p class="name">Roger Scott</p>
+									<span class="position">UI Designer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+
+								<div class="text pt-4">
+
+									<p class="name">Roger Scott</p>
+									<span class="position">Web Developer</span>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="testimony-wrap text-center py-4 pb-5">
+
+								<div class="text pt-4">
+									<p class="name">Roger Scott</p>
+									<span class="position">System Analyst</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section> -->
+	<footer class="ftco-footer ftco-bg-dark ftco-section">
+		<div class="container">
+			<div class="row mb-5">
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">FoFoSDN</h2>
+						<p>Formal Foundations of Software Defined Networks (FoFoSDN)</p>
+						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+							<li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4 ml-md-5">
+						<h2 class="ftco-heading-2">Useful Links</h2>
+						<ul class="list-unstyled">
+							<li><a href="#invitedSpeakers" class="py-2 d-block">Speakers</a></li>
+							<li><a href="#schedule" class="py-2 d-block">Shedule</a></li>
+							<li><a href="#organizers" class="py-2 d-block">Organizers</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Privacy</h2>
+						<ul class="list-unstyled">
+							<li><a href="#" class="py-2 d-block">About Us</a></li>
+							<li><a href="#" class="py-2 d-block">Contact Us</a></li>
+							<li><a href="#" class="py-2 d-block">Services</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-md">
+					<div class="ftco-footer-widget mb-4">
+						<h2 class="ftco-heading-2">Have a Questions?</h2>
+						<div class="block-23 mb-3">
+							<ul>
+								<li><span class="icon icon-map-marker"></span><span class="text">University of Konstanz,
+										Chair for Software and Systems Engineering, P.O. Box 67, D-78457, Konstanz,
+										Germany</span></li>
+								<li><a href="#"><span class="icon icon-phone"></span><span class="text">+49 7531 88 4762
+											/ +41 78 405 61 94</span></a></li>
+								<li><a href="#"><span class="icon icon-envelope"></span><span
+											class="text">​georgiana.caltais@uni-konstanz.de</span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 text-center">
+
+					<p>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+						Copyright &copy;
+						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
+						is made with <i class="icon-heart color-danger" aria-hidden="true"></i> by <a
+							href="https://colorlib.com" target="_blank">Colorlib</a> and <a href="https://www.vecteezy.com/free-vector/abstract">Vecteezy</a>
+						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<!-- loader -->
+	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" /></svg></div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.easing.1.3.js"></script>
+	<script src="js/jquery.waypoints.min.js"></script>
+	<script src="js/jquery.stellar.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/aos.js"></script>
+	<script src="js/jquery.animateNumber.min.js"></script>
+	<script src="js/scrollax.min.js"></script>
+	<script src="js/main.js"></script>
+
+</body>
+
+</html>
