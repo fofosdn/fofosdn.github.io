@@ -8618,6 +8618,35 @@ h1, h2, h3, h4, h5,
       font-size: 18px;
       font-weight: 300;
       color: #000000; }
+    
+  .speaker-wrap .text1 {
+        /* width: calc(100% - 180px); */
+        padding-left: 40px; }
+        @media (max-width: 767.98px) {
+          .speaker-wrap .text1 {
+            width: 100%;
+            padding-left: 0; } }
+        .speaker-wrap .text1 h2 {
+          font-size: 24px;
+          font-weight: 700; }
+          .speaker-wrap .text1 h2 a {
+            color: #1162fb; }
+        .speaker-wrap .text1 h3.speaker-name {
+          font-size: 20px;
+          font-weight: 600; }
+        .speaker-wrap .text1 .position {
+          font-size: 18px;
+          color: rgba(0, 0, 0, 0.4); }
+        .speaker-wrap .text1 .time {
+          font-weight: 600;
+          color: #1162fb;
+          font-size: 20px;
+          display: block;
+          margin-bottom: 10px; }
+        .speaker-wrap .text1 .location {
+          font-size: 18px;
+          font-weight: 300;
+          color: #000000; }
 
 .speaker {
   width: 100%; }

@@ -161,7 +161,7 @@
 								<div class="img speaker-img" style="background-image: url(images/jenifer.jpg);">
 								</div>
 								<div class="text">
-									<h2><a href="https://www.cs.princeton.edu/~jrex/">Jennifer Rexford</a></h2>
+									<h2><a href="https://www.cs.princeton.edu/~jrex/" id = "jennifer">Jennifer Rexford</a></h2>
 									<!-- <p class="location"><b>Title: Putting the networks users in charge:  how can P4
 											help?</b></p> -->
 									<p>Princeton University</p>
@@ -202,7 +202,7 @@
 
 						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
 							aria-labelledby="day-1-tab">
-							<div class="speaker-wrap ftco-animate d-md-flex">
+							<div class="speaker-wrap ftco-animate d-md-flex" id="nikolaj">
 								<div class="img speaker-img" style="background-image: url(images/nicolas.jpg);">
 								</div>
 								<div class="text">
@@ -249,7 +249,7 @@
 
 						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
 							aria-labelledby="day-1-tab">
-							<div class="speaker-wrap ftco-animate d-md-flex">
+							<div class="speaker-wrap ftco-animate d-md-flex" id="paola">
 								<div class="img speaker-img" style="background-image: url(images/paola.jpg);">
 								</div>
 								<div class="text">
@@ -306,33 +306,45 @@
 
 						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
 							aria-labelledby="day-1-tab">
-							<div class="speaker-wrap ftco-animate d-md-flex">
+							<div class="speaker-wrap ftco-animate d-md-flex" id="david">
 								<div class="img speaker-img" style="background-image: url(images/david-walker.jpg);">
 								</div>
 								<div class="text">
 									<h2><a href="https://www.cs.princeton.edu/~dpw/">David Walker</a></h2>
-									<!-- <p class="location"><b>Title: Putting the networks users in charge:  how can P4
-											help?</b></p> -->
+									<!-- <p class="location"><b>Petr4: Formal Foundations for P4 Data Planes</b></p> -->
 									<p>Princeton University</p>
 									<!-- <p class="location"><b>Abstract</b></p>
-									<p>Enhanced telemetry is one of areas where P4 is expected to open up new
-										possibilities for increased insight in the way traffic flows, and to use
-										this knowledge to steer and manage traffic flows. Is P4 a tool to make the
-										Internet more transparent and increase trust from users? In this talk I will
-										present our recent P4 work in the areas of user control and user
-										verification of network paths. I will address the implications of P4 use
-										towards a trusted Internet.</p> -->
+									<p>P4 is a domain-specific language for specifying the behavior of packet-processing
+										systems. It is based on an elegant design with high-level abstractions, such as
+										parsers and match action pipelines, which can be compiled to efficient
+										implementations in hardware or software. Unfortunately, like many industrial
+										languages, P4 lacks a formal foundation. The P4 specification is a 160-page
+										document with a mixture of informal prose, graphical diagrams, and pseudocode.
+										The reference compiler is complex, running to over 40KLoC of C++ code. Clearly
+										neither of these artifacts is suitable for formal reasoning. This talk will
+										introduce a new framework called Petr4 (pronounced "Petra"), that puts P4 on a
+										solid foundation. Petr4 uses standard elements of the semantics engineering
+										toolkit, namely type systems and operational semantics, to build a compositional
+										semantics that assigns an unambiguous meaning to every P4 program. Petr4 is
+										implemented as an OCaml prototype that has been validated against a suite of
+										over 750 tests from the reference implementation. While developing Petr4, we
+										discovered dozens of bugs in the language specification and the reference
+										implementation, many of which have been fixed. Furthermore, we have used Petr4
+										to establish the soundness of P4’s type system, prove key properties such as
+										termination, and formalize a language extension.</p> -->
 									<!-- <p class="location"><b>Bio</b></p>
-									<p>Dr. Paola Grosso is associate professor at the University of Amsterdam where
-										she leads the Multiscale Networked Systems research group (mns-research.nl).
-										Her research interests lie in the creation of sustainable and secure
-										e-Infrastructures, relying on the provisioning and design of
-										programmable networks.   She carries out this work supported by several
-										national research projects, such as Research on Networks, DL4LD, SecConNet
-										and a number of EU-funded international projects FED4FIRE+, GN4 and
-										ENVRIPLUS (H2020).  She contributes to the Dutch initiative 2STiC (2stic.nl)
-										building a nationwide P4 testbed for experimentation towards the future
-										internet.</p> -->
+									<p>Nate Foster is an Associate Professor of Computer Science at Cornell University,
+										a Principal Research Engineer at Barefoot Networks, an Intel Company. The goal
+										of his research is to develop languages and tools that make it easy for
+										programmers to build secure and reliable systems. His current work focuses on
+										the design and implementation of languages for programming software-defined
+										networks. In the past he has also worked on bidirectional languages (also known
+										as "lenses"), database query languages, data provenance, type systems,
+										mechanized proof, and formal semantics. He received a PhD in Computer Science
+										from the University of Pennsylvania, an MPhil in History and Philosophy of
+										Science from Cambridge University, and a BA in Computer Science from Williams
+										College. His awards include a Sloan Research Fellowship, an NSF CAREER Award,
+										the SIGCOMM Rising Star Award, and several paper and teaching awards.</p> -->
 									<!-- <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span
 												class="position">Founder of Wordpress</span></h3> -->
 								</div>
@@ -355,30 +367,41 @@
 								<div class="img speaker-img" style="background-image: url(images/jnfoster.jpg);">
 								</div>
 								<div class="text">
-									<h2><a
-											href="https://www.cs.cornell.edu/~jnfoster/">Nate Foster</a></h2>
-									<!-- <p class="location"><b>Title: Putting the networks users in charge:  how can P4
-											help?</b></p> -->
-									<p>Cornell University</p>
-									<!-- <p class="location"><b>Abstract</b></p>
-									<p>Enhanced telemetry is one of areas where P4 is expected to open up new
-										possibilities for increased insight in the way traffic flows, and to use
-										this knowledge to steer and manage traffic flows. Is P4 a tool to make the
-										Internet more transparent and increase trust from users? In this talk I will
-										present our recent P4 work in the areas of user control and user
-										verification of network paths. I will address the implications of P4 use
-										towards a trusted Internet.</p>
-									<p class="location"><b>Bio</b></p>
-									<p>Dr. Paola Grosso is associate professor at the University of Amsterdam where
-										she leads the Multiscale Networked Systems research group (mns-research.nl).
-										Her research interests lie in the creation of sustainable and secure
-										e-Infrastructures, relying on the provisioning and design of
-										programmable networks.   She carries out this work supported by several
-										national research projects, such as Research on Networks, DL4LD, SecConNet
-										and a number of EU-funded international projects FED4FIRE+, GN4 and
-										ENVRIPLUS (H2020).  She contributes to the Dutch initiative 2STiC (2stic.nl)
-										building a nationwide P4 testbed for experimentation towards the future
-										internet.</p> -->
+									<h2><a href="https://www.cs.cornell.edu/~jnfoster/" id="nate">Nate Foster</a></h2>
+									<p class="location"><b>Petr4: Formal Foundations for P4 Data Planes</b></p>
+									<!-- <p>Cornell University</p> -->
+									<p class="location"><b>Abstract</b></p>
+									<p>P4 is a domain-specific language for specifying the behavior of packet-processing
+										systems. It is based on an elegant design with high-level abstractions, such as
+										parsers and match action pipelines, which can be compiled to efficient
+										implementations in hardware or software. Unfortunately, like many industrial
+										languages, P4 lacks a formal foundation. The P4 specification is a 160-page
+										document with a mixture of informal prose, graphical diagrams, and pseudocode.
+										The reference compiler is complex, running to over 40KLoC of C++ code. Clearly
+										neither of these artifacts is suitable for formal reasoning. This talk will
+										introduce a new framework called Petr4 (pronounced "Petra"), that puts P4 on a
+										solid foundation. Petr4 uses standard elements of the semantics engineering
+										toolkit, namely type systems and operational semantics, to build a compositional
+										semantics that assigns an unambiguous meaning to every P4 program. Petr4 is
+										implemented as an OCaml prototype that has been validated against a suite of
+										over 750 tests from the reference implementation. While developing Petr4, we
+										discovered dozens of bugs in the language specification and the reference
+										implementation, many of which have been fixed. Furthermore, we have used Petr4
+										to establish the soundness of P4’s type system, prove key properties such as
+										termination, and formalize a language extension.</p>
+										<p class="location"><b>Bio</b></p>
+										<p>Nate Foster is an Associate Professor of Computer Science at Cornell University,
+											a Principal Research Engineer at Barefoot Networks, an Intel Company. The goal
+											of his research is to develop languages and tools that make it easy for
+											programmers to build secure and reliable systems. His current work focuses on
+											the design and implementation of languages for programming software-defined
+											networks. In the past he has also worked on bidirectional languages (also known
+											as "lenses"), database query languages, data provenance, type systems,
+											mechanized proof, and formal semantics. He received a PhD in Computer Science
+											from the University of Pennsylvania, an MPhil in History and Philosophy of
+											Science from Cambridge University, and a BA in Computer Science from Williams
+											College. His awards include a Sloan Research Fellowship, an NSF CAREER Award,
+											the SIGCOMM Rising Star Award, and several paper and teaching awards.</p>
 									<!-- <h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span
 												class="position">Founder of Wordpress</span></h3> -->
 								</div>
@@ -397,7 +420,7 @@
 
 						<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
 							aria-labelledby="day-1-tab">
-							<div class="speaker-wrap ftco-animate d-md-flex">
+							<div class="speaker-wrap ftco-animate d-md-flex" id="philip">
 								<div class="img speaker-img" style="background-image: url(images/godfrey.jpg);">
 								</div>
 								<div class="text">
@@ -443,17 +466,17 @@
 		<div class="container">
 			<div class="row justify-content-center mb-5">
 				<div class="col-md-7 text-center heading-section ftco-animate">
-					<h2 class="mb-3">Schedule (Comming soon)</h2>
+					<h2 class="mb-3">Tentative schedule</h2>
 				</div>
 			</div>
-			<!-- <div class="ftco-schedule">
+			<div class="ftco-schedule">
 				<div class="row">
 					<div class="col-md-3 nav-link-wrap text-center text-md-right">
 						<div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist"
 							aria-orientation="vertical">
 							<a class="nav-link ftco-animate active" id="v-pills-1-tab" data-toggle="pill"
 								href="#v-pills-1" role="tab" aria-controls="v-pills-1" aria-selected="true">
-								<span>10 November 2020</span></a>
+								<span>9 November 2020</span></a>
 						</div>
 					</div>
 					<div class="col-md-9 tab-wrap">
@@ -463,64 +486,172 @@
 							<div class="tab-pane fade show active" id="v-pills-1" role="tabpanel"
 								aria-labelledby="day-1-tab">
 								<div class="speaker-wrap ftco-animate d-md-flex">
-									<div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
-									</div>
-									<div class="text">
-										<h2><a href="#">Introduction to SDN</a></h2>
-										<p>A small river named Duden flows by their place and supplies it with the
+									<!-- <div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div> -->
+									<div class="text1">
+										<h2><a href="#">Opening</a></h2>
+										<!-- <p>A small river named Duden flows by their place and supplies it with the
 											necessary regelialia. It is a paradisematic country, in which roasted parts
-											of sentences fly into your mouth.</p>
-										<span class="time">09:00 am - 4:30 pm</span>
-										<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											of sentences fly into your mouth.</p> -->
+										<span class="time">16:00 - 16:10 </span>
+										<!-- <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
 											Building Los Angeles CA</p>
 										<p>A small river named Duden flows by their place and supplies it with the
 											necessary regelialia. It is a paradisematic country, in which roasted parts
-											of sentences fly into your mouth.</p>
-										<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span
-												class="position">Founder of Wordpress</span></h3>
+											of sentences fly into your mouth.</p> -->
+										<h3 class="speaker-name">&mdash; <a href="#">Organizers</a></h3>
 									</div>
 								</div>
 								<div class="speaker-wrap ftco-animate d-md-flex">
-									<div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
-									</div>
-									<div class="text">
-										<h2><a href="#">Introduction to SDN</a></h2>
-										<p>A small river named Duden flows by their place and supplies it with the
+									<!-- <div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div> -->
+									<div class="text1">
+										<h2><a href="#paola">Putting the networks users in charge: how can P4 help?</a></h2>
+										<!-- <p>A small river named Duden flows by their place and supplies it with the
 											necessary regelialia. It is a paradisematic country, in which roasted parts
-											of sentences fly into your mouth.</p>
-										<span class="time">09:00 am - 4:30 pm</span>
-										<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											of sentences fly into your mouth.</p> -->
+										<span class="time">16:10 - 16:40 </span>
+										<!-- <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
 											Building Los Angeles CA</p>
 										<p>A small river named Duden flows by their place and supplies it with the
 											necessary regelialia. It is a paradisematic country, in which roasted parts
-											of sentences fly into your mouth.</p>
-										<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span
-												class="position">Founder of Wordpress</span></h3>
+											of sentences fly into your mouth.</p> -->
+										<h3 class="speaker-name">&mdash; <a href="#paola">Paola Grosso</a> <span
+												class="position">University of Amsterdam</span></h3>
 									</div>
 								</div>
 								<div class="speaker-wrap ftco-animate d-md-flex">
-									<div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
-									</div>
-									<div class="text">
-										<h2><a href="#">Introduction to SDN</a></h2>
-										<p>A small river named Duden flows by their place and supplies it with the
+									<!-- <div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div> -->
+									<div class="text1">
+										<h2><a href="#david">Talk 2</a></h2>
+										<!-- <p>A small river named Duden flows by their place and supplies it with the
 											necessary regelialia. It is a paradisematic country, in which roasted parts
-											of sentences fly into your mouth.</p>
-										<span class="time">09:00 am - 4:30 pm</span>
-										<p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											of sentences fly into your mouth.</p> -->
+										<span class="time">16:40 - 16:55 </span>
+										<!-- <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
 											Building Los Angeles CA</p>
 										<p>A small river named Duden flows by their place and supplies it with the
 											necessary regelialia. It is a paradisematic country, in which roasted parts
-											of sentences fly into your mouth.</p>
-										<h3 class="speaker-name">&mdash; <a href="#">Ryan Thompson</a> <span
-												class="position">Founder of Wordpress</span></h3>
+											of sentences fly into your mouth.</p> -->
+										<h3 class="speaker-name">&mdash; <a href="#david">David Walker</a> <span
+												class="position">Princeton University</span></h3>
 									</div>
 								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<!-- <div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div> -->
+									<div class="text1">
+										<h2><a href="#">Break</a></h2>
+										<!-- <p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<span class="time">16:55 - 17:00 </span>
+										<!-- <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											Building Los Angeles CA</p>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<!-- <h3 class="speaker-name">&mdash; <a href="#">Paola Grosso</a> <span
+												class="position">University of Amsterdam</span></h3> -->
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<!-- <div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div> -->
+									<div class="text1">
+										<h2><a href="#jennifer">Talk 3</a></h2>
+										<!-- <p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<span class="time">17:00 - 17:30 </span>
+										<!-- <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											Building Los Angeles CA</p>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<h3 class="speaker-name">&mdash; <a href="#jennifer">Jennifer Rexford</a> <span
+												class="position">Princeton University</span></h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<!-- <div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div> -->
+									<div class="text1">
+										<h2><a href="#nate">Petr4: Formal Foundations for P4 Data Planes</a></h2>
+										<!-- <p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<span class="time">17:30 - 17:45 </span>
+										<!-- <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											Building Los Angeles CA</p>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<h3 class="speaker-name">&mdash; <a href="#nate">Nate Foster</a> <span
+												class="position">Cornell University</span></h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<!-- <div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div> -->
+									<div class="text1">
+										<h2><a href="#">Break</a></h2>
+										<!-- <p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<span class="time">17:45 - 17:50 </span>
+										<!-- <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											Building Los Angeles CA</p>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<!-- <h3 class="speaker-name">&mdash; <a href="#">Paola Grosso</a> <span
+												class="position">University of Amsterdam</span></h3> -->
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<!-- <div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div> -->
+									<div class="text1">
+										<h2><a href="#philip">Talk 5</a></h2>
+										<!-- <p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<span class="time">17:50 - 18:05 </span>
+										<!-- <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											Building Los Angeles CA</p>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<h3 class="speaker-name">&mdash; <a href="#philip">Philip Brighten Godfrey</a> <span
+												class="position">University of Illinois</span></h3>
+									</div>
+								</div>
+								<div class="speaker-wrap ftco-animate d-md-flex">
+									<!-- <div class="img speaker-img" style="background-image: url(images/staff1-1.png);">
+									</div> -->
+									<div class="text1">
+										<h2><a href="#nikolaj">Talk 6</a></h2>
+										<!-- <p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<span class="time">18:05 - 18:35 </span>
+										<!-- <p class="location"><span class="icon-map-o mr-2"></span>20 July 2019 - Hall,
+											Building Los Angeles CA</p>
+										<p>A small river named Duden flows by their place and supplies it with the
+											necessary regelialia. It is a paradisematic country, in which roasted parts
+											of sentences fly into your mouth.</p> -->
+										<h3 class="speaker-name">&mdash; <a href="#nikolaj">Nikolaj Bjørner</a> <span
+												class="position">Microsoft Research</span></h3>
+									</div>
+								</div>
+								
 							</div>
 						</div>
 					</div>
 				</div>
-			</div> -->
+			</div>
 		</div>
 	</section>
 
@@ -622,7 +753,8 @@
 					<div class="speaker ftco-animate speaker-1 d-flex align-items-center mb-5">
 						<div class="img" style="background-image: url(images/hossein.jpeg);"></div>
 						<div class="text pl-4">
-							<h3><a href="https://teias.institute/people/faculty/cs/hossein-hojjat/">Hossein Hojjat</a></h3>
+							<h3><a href="https://teias.institute/people/faculty/cs/hossein-hojjat/">Hossein Hojjat</a>
+							</h3>
 							<span class="position">Tehran Institute for Advanced Studies (TeIAS)</span>
 							<!-- <ul>
 								<li>Profile: <a href="https://teias.institute/people/faculty/cs/hossein-hojjat/"><span
@@ -785,9 +917,9 @@
 				</div>
 			</div> -->
 			<div class="row">
-				<div class="col-md-12 text-center" >
+				<div class="col-md-12 text-center">
 
-					<p style="text-align:center !important;" >
+					<p style="text-align:center !important;">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;
 						<script>document.write(new Date().getFullYear());</script> All rights reserved | This template
